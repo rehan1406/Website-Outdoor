@@ -1,0 +1,459 @@
+nav {
+  color: white;
+}
+nav ul {
+  font-size: 17px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+/* nav ul li:nth-child(6) {
+    background-color: #0273e6;
+    border-radius: 8px;
+
+} */
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #e6a902;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.companies img {
+  border: none;
+}
+
+/* LAPAK */
+.lapak {
+  font-family: "Montserrat", Sans-serif;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10%;
+  padding-top: 10%;
+  background-image: url(img/bgbatik.jpg);
+}
+.judul-lapak {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  color: blue;
+  font-size: 50px;
+}
+.isi-lapak {
+  font-family: "Montserrat", Sans-serif;
+  text-align: justify;
+  justify-content: center;
+  padding: 40px 200px;
+  font-size: 20px;
+}
+.lapak1 {
+  width: 80%;
+  height: 100%;
+}
+.lapak-gambar {
+  padding-top: 5%;
+}
+/* AKHIR LAPAK */
+
+/* CAROUSEL */
+.judul-carousel {
+  padding-bottom: 10px;
+  color: white;
+  font-size: 80px;
+}
+.isi-carousel {
+  padding-bottom: 250px;
+  color: white;
+  font-size: 20px;
+}
+
+/* END CAROUSEL */
+/* TESTIMONIALS */
+.testi {
+  background-color: #00aced;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.judul-testi {
+  justify-content: center;
+  text-align: center;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .box {
+  background: #fff;
+  width: calc(33% - 10px);
+  padding: 25px;
+  border-radius: 3px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+.wrapper .box i.quote {
+  font-size: 20px;
+  color: #17a2b8;
+}
+.wrapper .box .content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.box .info .name {
+  font-weight: 600;
+  font-size: 17px;
+}
+.box .info .job {
+  font-size: 16px;
+  font-weight: 500;
+  color: #17a2b8;
+}
+.box .info .stars {
+  margin-top: 2px;
+}
+.box .info .stars i {
+  color: #17a2b8;
+}
+.box .content .image {
+  height: 75px;
+  width: 75px;
+  padding: 3px;
+  background: #17a2b8;
+  border-radius: 50%;
+}
+.content .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.box:hover .content .image img {
+  border-color: #fff;
+}
+@media (max-width: 1045px) {
+  .wrapper .box {
+    width: calc(50% - 10px);
+    margin: 10px 0;
+  }
+}
+@media (max-width: 702px) {
+  .wrapper .box {
+    width: 100%;
+  }
+}
+/* AKHIR TESTIMONIALS */
+
+/* PROMOAN */
+.promo {
+  background-color: #007bb6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.promo-judul {
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  color: red;
+  background-color: white;
+}
+
+.timer-countainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+}
+h1 {
+  background-color: white;
+  font-size: 50px;
+}
+.big-text {
+  font-size: 50px;
+  margin: 0 50px;
+  font-weight: bold;
+}
+.text-c {
+  text-align: center;
+}
+.text-c span {
+  font-size: 20px;
+}
+
+/* TIMER */
+
+/* .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.countdown-container {
+  display: flex;
+}
+.big-text {
+  font-size: 4rem;
+}
+.title {
+  margin: 10px;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  line-height: 5.5rem;
+}
+.title span {
+  display: block;
+  font-size: 6rem;
+  letter-spacing: 2rem;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+.countdown-container > div {
+  margin: 0 2rem;
+  text-align: center;
+  border: 2px solid #fff;
+  padding: 0px 20px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  color: #fff;
+  min-width: 150px;
+}
+@media (max-width: 992px) {
+  .countdown-container > div {
+    margin: 0 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .countdown-container {
+    flex-wrap: wrap;
+  }
+  .countdown-container > div {
+    margin: 1rem auto;
+    max-width: 150px;
+  }
+  .title {
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    margin: 10px 0px;
+  }
+  .title span {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+  }
+} */
+
+/* AKHIR PROMOAN */
+
+/* FOOTER  */
+
+.site-footer {
+  background-color: #26272b;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+.site-footer hr.small {
+  margin: 20px 0;
+}
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+.site-footer a {
+  color: #737373;
+}
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-links li {
+  display: block;
+}
+.footer-links a {
+  color: #737373;
+}
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footer-links.inline li {
+  display: inline-block;
+}
+.site-footer .social-icons {
+  text-align: right;
+}
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
+}
+.copyright-text {
+  margin: 0;
+}
+@media (max-width: 991px) {
+  .site-footer [class^="col-"] {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center;
+  }
+}
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+.social-icons a {
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+.social-icons a.facebook:hover {
+  background-color: #3b5998;
+}
+.social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+.social-icons a.instagram:hover {
+  background-color: #ea4c89;
+}
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
+}
+
+.companies img {
+  border: none;
+  padding-bottom: 50%;
+}
+.metode {
+  padding-bottom: 50px;
+}
+/* FOOTER  */
+
+/* AKHIR FOOTER */
+
+/* RESPONSIVE */
+@media (max-width: 450px) {
+  .isi-lapak {
+    padding: 0 0;
+  }
+  .lapak1 {
+    width: 130px;
+  }
+  .judul-carousel {
+    overflow: visible;
+  }
+  .img-thumbnail {
+    width: 500px;
+  }
+}
+
+@media (max-width: 800px) {
+  .isi-lapak {
+    padding: 0 0;
+  }
+}
